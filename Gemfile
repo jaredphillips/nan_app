@@ -35,6 +35,13 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'meta_request'
+  gem "letter_opener"
+end
+
 
 gem 'rails_12factor', group: :production
 
