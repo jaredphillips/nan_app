@@ -1,4 +1,10 @@
 NanApp::Application.routes.draw do
+  get "pages/home"
+  get "pages/networking_partners"
+  get "pages/affiliates"
+  get "pages/newsletters"
+  get "pages/nancys_place"
+  get "pages/pauls_place"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
