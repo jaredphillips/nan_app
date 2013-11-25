@@ -6,5 +6,5 @@ class ApplicationController < ActionController::Base
 
   def mailing_list
   	@subscriber = Subscriber.new()
-	end 
+  end 
 end

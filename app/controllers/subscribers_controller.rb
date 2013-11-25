@@ -8,7 +8,7 @@ class SubscribersController < ApplicationController
       SubscriberMailer.welcome_email(@subscriber).deliver
       render pages_home_path
     else
-      render :back
+      render pages_home_path
     end
   end
 
