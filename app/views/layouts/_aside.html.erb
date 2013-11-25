@@ -1,10 +1,14 @@
 <aside class="large-3 columns">
   <div class="panel">
-    <h3>Newsletter</h3>
-    <%= form_for @subscriber do |f| %>
-	    <p>Sign-up above for our newsletter featuring free events, seminars along with inspirational music and video links.</p>
-	    <%= f.text_field :email, { class: "email-input", placeholder: "  Your Email Here" } %>
-	    <%= f.submit %>
+  	<% unless @subscribed == true %>
+	    <h3>Newsletter</h3>
+	    <%= form_for @subscriber do |f| %>
+		    <p>Sign-up above for our newsletter featuring free events, seminars along with inspirational music and video links.</p>
+		    <%= f.text_field :email, { class: "email-input", placeholder: "  Your Email Here" } %>
+		    <%= f.submit %>
+	    <% end %>
+    <% else %>
+      <h2>Thank You</h2>
     <% end %>
   </div>
 </aside>
