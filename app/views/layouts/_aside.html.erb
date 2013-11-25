@@ -1,7 +1,7 @@
 <aside class="large-3 columns">
   <div class="panel">
     <h3>Newsletter</h3>
-    <%= form_for @user, url: users_path, html: { method: :post } do |f| %>
+    <%= form_for @subscriber, url: subscribers_path, html: { method: :post } do |f| %>
 	    <p>Sign-up above for our newsletter featuring free events, seminars along with inspirational music and video links.</p>
 	    <%= f.text_field :email, { class: "email-input", placeholder: "  Your Email Here" } %>
 	    <%= f.submit %>

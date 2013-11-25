@@ -6,6 +6,8 @@ NanApp::Application.routes.draw do
   get "pages/nancys_place"
   get "pages/pauls_place"
 
+  resources :subscribers
+
   resources :users
 
   root 'pages#home'

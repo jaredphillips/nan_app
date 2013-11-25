@@ -4,16 +4,9 @@ class UsersController < ApplicationController
   end
 
   def new
-    @user = User.new
   end
 
   def create
-    @user = User.create(email: params[:email])
-    if @user.save
-      UserMailer.welcome_email(@user).deliver
-    else
-      render 'new'
-    end
   end
 
   def update
