@@ -4,10 +4,10 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 
 # Use postgresql as the database for Active Record
-# gem 'pg'
+gem 'pg'
 
 # Using sqlite until I can get postgres on lockdown
-gem 'sqlite3'
+# gem 'sqlite3'
 
 # Use Zurb for grid and styling
 gem "zurb-foundation", "~> 4.3.2"
