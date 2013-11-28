@@ -5,7 +5,7 @@ class SubscribersController < ApplicationController
   def create
     @subscriber = Subscriber.create(email: params[:email])
     if @subscriber.save
-      SubscriberMailer.welcome_email(@subscriber).deliver
+      # SubscriberMailer.welcome_email(@subscriber).deliver
       subscribed
       render pages_home_path
     else
