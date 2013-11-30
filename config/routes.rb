@@ -1,4 +1,6 @@
 NanApp::Application.routes.draw do
+  resources :users
+  resources :sessions, only: [:new, :create, :destroy]
   get "pages/home"
   get "pages/networking_partners"
   get "pages/affiliates"
@@ -7,8 +9,6 @@ NanApp::Application.routes.draw do
   get "pages/pauls_place"
 
   resources :subscribers
-
-  resources :users
 
   root 'pages#home'
   # The priority is based upon order of creation: first created -> highest priority.
