@@ -3,6 +3,13 @@
   margin: 10px;
 }
 
+.nav-header {
+	color: #c0392b;
+	&:hover {
+		color: #e74c3c;
+	}
+}
+
 .panel {
   height: 350px;
 }
@@ -41,5 +48,25 @@ h1 {
 	}
 }
 
+.control-panel-buttons {
+	list-style-type: none;
+	li {
+		background-color: grey;
+		display: inline-block;
+		padding: 15px 10px 10px 10px;
+		margin: 10px;
+		height: 60px;
+		text-align: center;
+		border-radius: 5px;
+	}
+	a {
+		color: white;
+		font-family: 'Open Sans', sans-serif;
+	}
+	li:hover {
+		background-color: #2980b9;
+		transition: 1s;
+	}
+}
 
 
